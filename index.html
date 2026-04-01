@@ -1,41 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavya H - Professional Interactive CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>kavya</h1>
-            <p>student | kavyahsp22@gmail.com | +44704138808055</p>
-        </header>
+  <div class="main-container">
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Eager to learn new technologies and build practical applications through personal projects and coursework.</p>
-        </section>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <h1>Kavya </h1>
+        <p>BSc Computing Science</p>
+        <p><a href="mailto:kavyahsp22@gmail.com">kavyahsp22@gmail.com</a></p>
+        <p>Coventry University, UK</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#interests">Interests</a></li>
+        </ul>
+      </nav>
+      <button class="download-btn" onclick="window.print()">Download CV</button>
+    </aside>
 
-        <section class="experience">
-            
-            </ul>
-        </section>
+    <!-- Main Content -->
+    <div class="content">
 
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>B.Sc. in Computering Science</strong>, Coventry University (2025 - 2027)
-                </li>
-            </ul>
-        </section>
+      <!-- About Me -->
+      <section id="about" class="section reveal">
+        <h2>About Me</h2>
+        <p>I am a dedicated Computing Science student at Coventry University with strong expertise in software development, algorithms, and web technologies. Passionate about building high-quality solutions and contributing to global tech projects.</p>
+      </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <p>HTML, CSS, JavaScript, React, Git, Responsive Design</p>
-        </section>
+      <!-- Education -->
+      <section id="education" class="section reveal">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>BSc Computing Science</h3>
+            <span>Coventry University, UK | 2022 - Present</span>
+            <p>Courses: Data Structures & Algorithms, Software Engineering, Database Systems, Web Development, Cybersecurity</p>
+            <p>Achievements: Dean's List, Academic Excellence Award, Capstone Project on Web Application Development</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section reveal">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <span>Python</span>
+            <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Java</span>
+            <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
+          </div>
+          <div class="skill">
+            <span>C++</span>
+            <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
+          </div>
+          <div class="skill">
+            <span>JavaScript / React.js</span>
+            <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
+          </div>
+          <div class="skill">
+            <span>SQL / MongoDB</span>
+            <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section reveal">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Intern / Software Developer</h3>
+            <span>ABC Tech Solutions, London | June 2025 – Aug 2025</span>
+            <p>Developed web applications using React.js and Node.js. Improved performance by 20% and implemented new features for client projects.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Student Assistant / University Lab</h3>
+            <span>Coventry University | Sept 2023 – May 2024</span>
+            <p>Assisted students in coding labs, debugging assignments, and organizing workshops for practical development techniques.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>Fully responsive portfolio showcasing skills, projects, and achievements. Built with HTML, CSS, JavaScript, and React.js.</p>
+        </div>
+        <div class="project-card">
+          <h3>Library Management System</h3>
+          <p>Python & SQL system managing books, users, and loans with CRUD operations and reporting tools.</p>
+        </div>
+        <div class="project-card">
+          <h3>AI Chatbot Prototype</h3>
+          <p>Python-based chatbot for FAQs using NLP libraries integrated into a web interface.</p>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section reveal">
+        <h2>Certifications & Awards</h2>
+        <ul>
+          <li>Microsoft Certified: Azure Fundamentals – 2025</li>
+          <li>Data Science with Python – Coursera, 2024</li>
+          <li>Dean’s List – Coventry University, 2023</li>
+        </ul>
+      </section>
+
+      <!-- Languages -->
+      <section id="languages" class="section reveal">
+        <h2>Languages</h2>
+        <ul>
+          <li>English – Fluent</li>
+          <li>Hindi – Native</li>
+          <li>Spanish – Intermediate</li>
+        </ul>
+      </section>
+
+      <!-- Interests -->
+      <section id="interests" class="section reveal">
+        <h2>Interests</h2>
+        <p>Open-source contribution, competitive programming, AI & Machine Learning, Web Development, Traveling, Reading Tech Blogs.</p>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>© 2026 Kavya H | Interactive Professional CV</p>
+      </footer>
+
     </div>
+  </div>
+
+  <!-- Scroll Reveal Script -->
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+        if(elementTop < windowHeight - elementVisible){
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    });
+  </script>
 </body>
 </html>
